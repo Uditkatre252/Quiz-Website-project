@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="math-quiz">Mathematics Quiz</a></li>
+            <li><a href="#" id="indian-gk-quiz">Indian GK Quiz</a></li>
+        </ul>
+    </nav>
+    <div id="opening-page" class="center">
+        <h1>Welcome to the Classic Quiz</h1>
+        <button id="start-quiz" class="btn" disabled>Start Quiz</button>
+    </div>
+    <div class="quiz-container hidden" id="quiz">
+        <div id="quiz-header">
+            <h2 id="question">Question text</h2>
+            <p id="question-number"></p>
+            <p id="timer">Time left: <span id="time-left">10</span> seconds</p>
+        </div>
+        <div class="quiz-body">
+            <ul>
+                <li>
+                    <input type="radio" id="choice1" name="answer" class="answer">
+                    <label for="choice1" id="choice1-text">Choice 1</label>
+                </li>
+                <li>
+                    <input type="radio" id="choice2" name="answer" class="answer">
+                    <label for="choice2" id="choice2-text">Choice 2</label>
+                </li>
+                <li>
+                    <input type="radio" id="choice3" name="answer" class="answer">
+                    <label for="choice3" id="choice3-text">Choice 3</label>
+                </li>
+                <li>
+                    <input type="radio" id="choice4" name="answer" class="answer">
+                    <label for="choice4" id="choice4-text">Choice 4</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit" class="btn">Submit</button>
+    </div>
+    <div id="results" class="hidden">
+        <h2 id="score"></h2>
+        <button id="retry" class="btn">Retry</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
